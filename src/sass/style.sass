@@ -1,0 +1,27 @@
+=media ($size)
+    @media screen and (min-width: #{$size}px)
+        @content
+
+.card
+    border: 1.5px solid transparent
+    border-bottom: 3px solid transparent
+    max-width: 270px
+    &:hover
+        border: 1.5px solid #f5ed08
+        border-bottom: 3px solid #eae208
+
+.fancy-button
+    display: inline-block
+    text-transform: uppercase
+    text-align: center
+    padding-top: 10px
+    padding-block: 7px
+    max-width: 200px
+    color: #151517
+    text-decoration: none
+    background-color: #f5ed08
+    border-radius: 5px
+    border: 1.5px solid #f5ed08
+    border-bottom: 3px solid transparent
+    &:hover
+        border-bottom: 3px solid #eae208
