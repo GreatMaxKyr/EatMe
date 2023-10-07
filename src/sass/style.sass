@@ -2,26 +2,91 @@
     @media screen and (min-width: #{$size}px)
         @content
 
-.card
-    border: 1.5px solid transparent
-    border-bottom: 3px solid transparent
-    max-width: 270px
-    &:hover
-        border: 1.5px solid #f5ed08
-        border-bottom: 3px solid #eae208
+body
+    font-family: 'Roboto Slab', serif
+    color: #151517
+
+    a   
+        font-family: 'Roboto', sans-serif
+
+.eatMeMenu
+    
+
+.tasty-fruit
+    padding: 80px 0 30px
+    background-image: url(../img/soup.jpg)
+    background-size: cover
+    background-position: center
+    color: #fff
+
+    a
+        color: #000
+        &:hover
+            color: #fff
+
+.card-block
+    padding: 60px 0 80px
+
+    .card
+        border: 1.5px solid transparent
+        max-width: 270px
+        &:hover
+            transition: all 0.5s ease-out
+            border: 1.5px solid #f5ed08
+            border-bottom: 3px solid #eae208
+            transform: translate(0, -3px)
 
 .fancy-button
     display: inline-block
     text-transform: uppercase
     text-align: center
-    padding-top: 10px
-    padding-block: 7px
-    max-width: 200px
+    padding: 17px 6px
+    max-width: 220px
     color: #151517
     text-decoration: none
-    background-color: #f5ed08
     border-radius: 5px
     border: 1.5px solid #f5ed08
-    border-bottom: 3px solid transparent
+    background-color: #f5ed08
     &:hover
+        background-color: transparent
+        transition: all 0.5s ease-out
+        transform: translate(0, -3px)
         border-bottom: 3px solid #eae208
+        animation: 3s linear 
+
+.bt-comp
+    padding: 60px 0
+
+.sale
+    padding: 80px 0 45px
+    height: 260px
+    background-image: url(../img/menu.jpg)
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+
+    p
+        color: #fff
+
+    a
+        font-weight: bold
+        &:hover
+            color: #fff
+
+.popular-meals
+    padding: 70px 0
+    font-weight: 700
+
+    a
+        padding: 7px 5px
+        margin: 0 6px
+        background-color: transparent
+        &:hover
+            background-color: #f5ed08
+
+.food-line
+    background-image: url(../img/food.jpg)
+    background-size: cover
+    background-position: center
+    height: 230px
+
