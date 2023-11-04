@@ -9,8 +9,22 @@ body
     a   
         font-family: 'Roboto', sans-serif
 
+.styleMe
+    font-size: 20px
+
 .eatMeMenu
-    
+    display: none
+    +media(992)
+        display: flex
+    li
+        padding-left: 15px
+        padding-top: 5px
+        a
+            font-weight: 700
+            font-family: "Roboto"
+            text-align: right
+            text-transform: uppercase
+            font-size: 0.8rem
 
 .tasty-fruit
     padding: 80px 0 30px
@@ -50,16 +64,70 @@ body
     &:hover
         background-color: transparent
         transition: all 0.5s ease-out
-        transform: translate(0, -3px)
-        border-bottom: 3px solid #eae208
         animation: 3s linear 
+
+.nav-item
+    display: inline-block
+
+.top-menu-buttons-block
+    flex-direction: row-reverse
+    +media(992)
+        flex-direction: row
+
+.ofcanvas-block
+    display: inline-block
+    +media(992)
+        display: none
+
+.disappering-links
+    display: none
+    +media(992)
+        display: flex
+
+.cross
+    --bs-btn-close-color: #fff
+    background-image: none
+
+    span,
+    span:before,
+    span:after 
+        content: ""
+        position: absolute
+        width: 30px
+        height: 5px
+        background-color: #fff
+        border-radius: 5rem
+        top: 32px
+        transition: box-shadow .15s ease-in-out
+        box-shadow: 0 0 3px 1px #e9e9e9
+
+    span 
+        right: 50px
+        width: 0
+        height: 0
+        &:before 
+            width: 30px
+            height: 5px
+            transform: rotate(225deg)
+
+        &:after 
+            width: 30px
+            height: 5px
+            transform: rotate(-225deg)
+
+.lnks
+    list-style: none
+    vertical-align: middle
+    margin-bottom: 0
 
 .bt-comp
     padding: 60px 0
 
 .sale
     padding: 80px 0 45px
-    height: 260px
+    height: 350px
+    +media(500)
+        height: 300px
     background-image: url(../img/menu.jpg)
     background-size: cover
     background-position: center
@@ -88,5 +156,74 @@ body
     background-image: url(../img/food.jpg)
     background-size: cover
     background-position: center
-    height: 230px
+    height: 220px
 
+.portrait-row
+    background-color: #fff
+    border-radius: 3px
+    padding: 40px 0 60px
+
+    img
+        max-width: 80px
+        max-height: 80px
+        border-radius: 50%
+        position: relative
+        &:hover
+            border: 1px solid #f5ed08
+    
+    // .doots,
+    // .doots::before,
+    // .doots::after
+    //     content: ''
+    //     position: absolute
+    //     display: inline
+    //     top: 40px
+    //     width: 10px
+    //     height: 10px
+    //     border-radius: 50%
+    //     background-color: #fff
+    //     border: 1px solid #ccc
+        
+    //     &::after
+    //         right: 40px
+    //     &::before
+    //         left: 40px
+            
+    //     &::after::hover,
+    //     &::before::hover
+    //         background-color: #f5ed08
+
+footer
+
+    ul
+        list-style: none
+        padding: 0
+        
+        a
+            color: #fff
+            text-decoration: none
+            &:hover
+                color: #f5ed08
+
+    p
+        &:hover
+            text-decoration: underline
+
+    .sender
+        background-color: transparent
+        color: #878787 
+        padding: 10px 20px 10px 20px
+        border: 1px solid #878787 
+        border-radius: 5px
+        border-right: none
+
+    .telegram
+        border: 1px solid #878787 
+        border-left: none
+        margin-left: -33px 
+        color: transparent
+
+    .icons
+        a
+            color: #f5ed08
+            text-decoration: none

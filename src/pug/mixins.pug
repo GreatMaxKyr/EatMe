@@ -1,0 +1,18 @@
+-
+    let menu = [
+        {name:"Головна", url:"#"},
+        {name:"категорії", url:"#"},
+        {name:"Доставка та оплата", url:"#"},
+        {name:"гарантія", url:"#"},
+        {name:"Про нас", url:"#"},
+        {name:"контакти", url:"#"}
+    ]
+
+mixin navigmenu (items, navclass, hambclass)
+    nav(class=navclass)
+        ul
+            for item in items
+                li 
+                    a.nav-link.active.t-links(href=item.url) #{item.name}
+    .hamburger(class=hambclass)
+        span  
